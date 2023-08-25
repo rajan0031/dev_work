@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on load events</title>
+    <style>
+      #body {
+        text-align: center;
+      }
+      #btn {
+        border-radius: 30px;
+      }
+      #btn1 {
+        border: 2px solid black;
+        width: 150px;
+        border-radius: 10px;
+        height: 35px;
+      
+      }
+      .black {
+          color: white;
+        background-color: black;
+      }
+      .white {
+          color: black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1>
+      <p><b>this is rajan java script</b></p>
+    </h1>
+    <hr />
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima vel
+      tempora doloremque. Natus temporibus molestiae sunt modi consequuntur
+      libero provident? At nihil necessitatibus eligendi delectus voluptates
+      minus commodi in voluptas, placeat aperiam ducimus. Omnis, culpa
+      voluptatibus aperiam quae et deserunt temporibus itaque, qui minima
+      sapiente ea, ipsum fugiat non repellat. Magni vel sunt, provident
+      reprehenderit veritatis, ad dignissimos quas dolorum dicta fugiat sed
+      nobis voluptates, odit saepe labore eum! Quis, in reiciendis? Provident
+      aut praesentium laborum ex iste ea sapiente quisquam sed, non, repellat
+      magnam necessitatibus suscipit incidunt odio qui dicta minima error neque
+      dolor. Repellat illum enim quam!
+    </p>
+    <br />
+    <br />
+    <hr />
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aspernatur
+      velit alias repudiandae, hic natus repellendus autem tempore dolor
+      explicabo eligendi soluta architecto asperiores esse consequatur neque
+      fugiat impedit. Dolores atque impedit, soluta unde accusantium quasi sit
+      voluptate distinctio ad?
+    </p>
+    <br />
+    <br />
+    <div id="btn">
+      <button id="btn1" onclick="fun()">theme</button>
+    </div>
+    <script>
+      var body = document.getElementById("body");
+      var button = document.getElementById("btn1");
+      /*
+      function theme() {
+        if (body.className == "black") {
+          body.className = "white";
+        } else {
+          body.className = "black";
+        }
+      }
+      */
+       function fun() {
+        if (body.className == "black") {
+          body.className = "white";
+          button.className = "black";
+        } else {
+          body.className = "black";
+          button.className = "white";
+        }
+      };
+    </script>
+  </body>
+</html>

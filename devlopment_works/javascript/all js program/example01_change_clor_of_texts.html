@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change colour of texts</title>
+  </head>
+  <style>
+    #btn1 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: red;
+    }
+    #btn2 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: green;
+    }
+    #btn3 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: pink;
+    }
+  </style>
+  <body>
+    <div class="container1">
+      <h1 id="h1">this is the headings1</h1>
+      <p id="para1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla,
+        id aut quaerat, quasi doloribus totam reiciendis eos quas dicta earum
+        beatae reprehenderit nobis at maxime suscipit distinctio numquam magni.
+        Rem, illo quo quasi nisi obcaecati dolore alias repellendus molestias
+        rerum voluptatum aspernatur saepe sint neque! Sit vitae iure natus, vero
+        nostrum, minus nesciunt odit veniam ea, quaerat doloremque. Rem nulla
+        laborum eum laudantium et assumenda dolore itaque, earum neque
+        voluptatum modi harum inventore aliquam ea, iure sapiente quam,
+        perferendis quod minus. Ipsa quidem suscipit tempore iusto, delectus
+        vero atque ad reiciendis officiis! Saepe, iusto! Vitae quod quasi
+        tempore aspernatur corrupti suscipit, atque modi asperiores aliquid!
+        Velit recusandae quaerat nostrum nobis, rerum consequatur hic optio
+        reiciendis laudantium libero autem, deserunt placeat ex tenetur.
+      </p>
+    </div>
+
+    <div class="container2">
+      <h1 id="h1">this is the headings2</h1>
+      <p id="para2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla,
+        id aut quaerat, quasi doloribus totam reiciendis eos quas dicta earum
+        beatae reprehenderit nobis at maxime suscipit distinctio numquam magni.
+        Rem, illo quo quasi nisi obcaecati dolore alias repellendus molestias
+        rerum voluptatum aspernatur saepe sint neque! Sit vitae iure natus, vero
+        nostrum, minus nesciunt odit veniam ea, quaerat doloremque. Rem nulla
+        laborum eum laudantium et assumenda dolore itaque, earum neque
+        voluptatum modi harum inventore aliquam ea, iure sapiente quam,
+        perferendis quod minus. Ipsa quidem suscipit tempore iusto, delectus
+        vero atque ad reiciendis officiis! Saepe, iusto! Vitae quod quasi
+        tempore aspernatur corrupti suscipit, atque modi asperiores aliquid!
+        Velit recusandae quaerat nostrum nobis, rerum consequatur hic optio
+        reiciendis laudantium libero autem, deserunt placeat ex tenetur.
+      </p>
+    </div>
+
+    <div class="container3">
+      <h1 id="h1">this is the headings3</h1>
+      <p id="para3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla,
+        id aut quaerat, quasi doloribus totam reiciendis eos quas dicta earum
+        beatae reprehenderit nobis at maxime suscipit distinctio numquam magni.
+        Rem, illo quo quasi nisi obcaecati dolore alias repellendus molestias
+        rerum voluptatum aspernatur saepe sint neque! Sit vitae iure natus, vero
+        nostrum, minus nesciunt odit veniam ea, quaerat doloremque. Rem nulla
+        laborum eum laudantium et assumenda dolore itaque, earum neque
+        voluptatum modi harum inventore aliquam ea, iure sapiente quam,
+        perferendis quod minus. Ipsa quidem suscipit tempore iusto, delectus
+        vero atque ad reiciendis officiis! Saepe, iusto! Vitae quod quasi
+        tempore aspernatur corrupti suscipit, atque modi asperiores aliquid!
+        Velit recusandae quaerat nostrum nobis, rerum consequatur hic optio
+        reiciendis laudantium libero autem, deserunt placeat ex tenetur.
+      </p>
+    </div>
+
+    <button id="btn1" onclick="cng1()">H01</button>
+    <button id="btn2" onclick="cng2()">H02</button>
+    <button id="btn3" onclick="cng3()">H03</button>
+
+    <script>
+      function cng1() {
+        let btn1 = document.getElementById("btn1");
+        let para1 = document.getElementById("para1");
+        if (para1.style.color != "red" || para1.style.background != "skyblue") {
+          para1.style.color = "red";
+          para1.style.background = "skyblue";
+        } else {
+          para1.style.color = "black";
+        }
+      }
+      function cng2() {
+        let btn2 = document.getElementById("btn2");
+        let para2 = document.getElementById("para2");
+        if (para2.style.color != "green") {
+          para2.style.color = "green";
+        } else {
+          para2.style.color = "yellow";
+        }
+      }
+      function cng3() {
+        let btn3 = document.getElementById("btn3");
+        let para3 = document.getElementById("para3");
+        if (para3.style.color != "pink") {
+          para3.style.color = "pink";
+        } else {
+          para3.style.color = "yellow";
+        }
+      }
+    </script>
+  </body>
+</html>

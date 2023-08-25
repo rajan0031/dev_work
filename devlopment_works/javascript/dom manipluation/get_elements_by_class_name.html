@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what is dom manipluation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: aqua;
+        color: white;
+        padding: 15px 0px 20px 40px;
+      }
+      h2#header-title {
+        padding: 10px 0px;
+      }
+      div#content {
+        padding: 15px 0px 0px 45px;
+      }
+      div#content > h4 {
+        border-bottom: 2px solid green;
+        padding: 0px 20px 10px 5px;
+        display: inline-block;
+        width: 50%;
+      }
+      li.list-item {
+        border-bottom: 1px solid gray;
+        padding: 10px 0px;
+      }
+      form > input,
+      button {
+        padding: 5px;
+      }
+      .rajan {
+        border: 2px solid red;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h2 id="header-title">rajan</h2>
+      <p id="tagline">computer education</p>
+    </header>
+    <div id="content">
+      <h4>courses</h4>
+      <ul id="items">
+        <li class="list-items">Graphics</li>
+        <li class="list-items">Web</li>
+        <li class="list-items">Videos</li>
+        <li class="list-items">3D</li>
+      </ul>
+      <form action="">
+        <input type="text" />
+        <button>SUBMIT</button>
+      </form>
+    </div>
+    <script>
+      var items = document.getElementsByClassName("list-items");
+      //console.log(header);
+      items[0].textContent = "app development";
+      items[0].style.color = "red";
+      items[0].style.fontWeight = "bold";
+      items[0].style.backgroundColor = "yellow";
+      for (var i = 0; i < 4; i++) {
+        items[i].style.backgroundColor = "brown";
+      }
+    </script>
+  </body>
+</html>

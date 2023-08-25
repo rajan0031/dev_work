@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>send a mail</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <form method="post">
+      <input type="button" value="Send Email" onclick="sendEmail()" />
+    </form>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "gjunotes@gmail.com",
+          Password: "255B065A54F9AA343635DF702ABAE7D913BC",
+          To: "raykushwaha0031@gmail.com",
+          From: "gjunotes@gmail.com",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>

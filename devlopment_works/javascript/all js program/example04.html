@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on off bulb</title>
+  </head>
+  <style>
+    #main {
+      background-image: none;
+      width: 200px;
+      border: 2px solid black;
+      height: 200px;
+      margin-top: 300px;
+      margin-left: 300px;
+      border-radius: 100px;
+    }
+    button {
+      width: 223px;
+      height: 23px;
+      border: 2px solid blue;
+      border-radius: 14px;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="holder">holder</div>
+    <div id="main">this is</div>
+    <button onclick="onoff()"></button>
+    <script>
+      function onoff() {
+        let var1 = document.getElementById("main");
+        if (var1.style.background != "yellow") {
+          var1.style.background = "yellow";
+        } else {
+          var1.style.background = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header1">welcome to our community</div>
+      <div class="header2">fill this form to contact me</div>
+      <form
+        method="POST"
+        class="form"
+        name="google-sheet"
+        onsubmit="sendEmail()"
+      >
+        Name
+        <input
+          type="text"
+          id="name"
+          placeholder="enter your name"
+          name="name"
+        />
+        Email
+        <input
+          type="text"
+          id="email"
+          placeholder="enter your email"
+          name="email"
+        />
+        Mobile
+        <input
+          type="text"
+          id="mobile"
+          placeholder="enter your mobile"
+          name="mobile"
+        />
+        <button id="btn" name="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "gjunotes@gmail.com",
+          Password: "541823B248F9C852BA20A040C0B8DEBCCC5B",
+          To: "gjunotes@gmail.com",
+          From: "gjunotes@gmail.com",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>

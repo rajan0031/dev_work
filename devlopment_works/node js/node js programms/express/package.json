@@ -1,0 +1,16 @@
+{
+  "name": "rajan",
+  "version": "1.0.0",
+  "description": "this is a pakage we created while stydy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rajan hatela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>collage mitra project</title>
+
+    <style>
+       
+      .rajanbody {
+       /* border: 2px solid red; */
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right: 50px;
+      }
+      .h1 {
+        border: 1px solid blue;
+        background-color: blue;
+      }
+      #navbar {
+        border: 2px solid blue;
+        background-color: blue;
+        border: radius 0px;
+      }
+      ul {
+        overflow: auto;
+      }
+      #navbar li {
+        list-style: none;
+        float: left;
+      }
+      #navbar li a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 3px;
+        margin: 9px;
+      }
+      #navbar a :hover {
+        /*  background-color: yellow; */
+      }
+      #d1 img {
+        width: 1518px;
+      }
+      .m1 {
+       /* border: 2px solid red; */
+      }
+      .main {
+        /* border: 2px solid black; */
+      }
+      .rajan1 {
+        /* border: 2px solid black; */
+        text-align: center;
+      }
+      .rajan2 {
+        /*  border: 2px solid blue; */
+        text-align: center;
+      }
+      .rajan3 {
+        /*  border: 2px solid black; */
+        display: flex;
+      }
+      .rajan4 {
+        /*  border: 2px solid blue; */
+        width: 33%;
+        text-align: center;
+      }
+      .rajan4 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+      .rajan5 {
+        /*  border: 2px solid blue; */
+        width: 33%;
+        text-align: center;
+      }
+      .rajan5 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+      .rajan6 {
+        /* border: 2px solid blue; */
+        width: 33%;
+        text-align: center;
+      }
+      .rajan6 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+      .flex-container {
+        /* border: 2px solid red; */
+        display: flex;
+      }
+      .rajan7 {
+        /*  border: 2px solid red; */
+        display: flex;
+      }
+      .rajan8 {
+        font-size: large;
+        /*  border: 2px solid blue; */
+        width: 33%;
+        margin: 1px;
+        padding: 31px;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .rajan9 {
+        font-size: larger;
+        /* border: 2px solid blue; */
+        width: 33%;
+        margin: 1px;
+        padding: 31px;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .rajan10 {
+        font-size: larger;
+        /*  border: 2px solid blue; */
+        width: 33%;
+        margin: 1px;
+        padding: 31px;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .rajan11 {
+        /* border: 1px solid black; */
+        text-align: center;
+      }
+      .rajan11 button {
+        font-size: larger;
+        background-color: black;
+        color: white;
+        width: 270px;
+        height: 60px;
+        border-radius: 50px;
+      }
+      .rajan12 {
+        /*  border: 2px solid black; */
+      text-align:center;
+        margin: 30px;
+        font-size: large;
+        
+        color: black;
+      }
+      .rajan13 {
+        /*  border: 2px solid red; */
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: xx-large;
+        padding-top: 10px;
+      }
+      .rajan14 {
+        /*  border: 2px solid black; */
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .rajan15 {
+        /* border: 2px solid red; */
+        display: flex;
+        margin-top: 40px;
+        height: 550px;
+      }
+      .rajan16 {
+        /*  border: 2px solid red; */
+        width: 150%;
+        text-align: center;
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .rajan16 img {
+        width: 90%;
+      }
+      .rajan17 {
+        /* border: 2px solid green; */
+      width: 150%;
+        text-align: center;
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .rajan17 img {
+        width: 90%;
+      }
+      .rajan18 {
+        /* border: 2px solid rebeccapurple; */
+        width: 150%;
+        text-align: center;
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .rajan18 img {
+        margin-top: 26px;
+        width: 90%;
+      }
+      .rajan19 {
+        /*  border: solid red; */
+        background-color: white;
+        text-align: center;
+        color: black;
+        margin-top: 70px;
+      }
+      .rajan20 {
+        font-size: x-large;
+        /*  border: 2px solid black; */
+        text-align: center;
+      }
+      .rajan21 {
+        /*  border: 2px solid red; */
+        text-align: center;
+      }
+      .rajan21 button {
+        background-color: black;
+        color: white;
+        width: 300px;
+        height: 60px;
+        border-radius: 40px;
+      }
+      .rajan21 button a {
+        color: white;
+        font-size: larger;
+        text-decoration: none;
+      }
+      .ins1 {
+        /*  border: 2px solid red; */
+      }
+      .ins a {
+        text-decoration: none;
+      }
+      .ins2 {
+        /* border: 2px solid green; */
+      }
+      .ins3 {
+        /*  border: 2px solid red; */
+      }
+      .last {
+        text-align: center;
+      
+      }
+      .rajan22{
+        background-color: black;
+      }
+      .rajan23{
+       /* border: 2px solid red; */
+        background-color: white;
+        height: 500px;
+      }
+      .last{
+      /*  border: 2px solid purple; */
+        background-color: black;
+        color: white;
+        height: 33px;
+        padding-top: 20px;
+      }
+      
+    </style>
+    
+   
+  </head>
+  <body>
+   
+      <header class="h1">
+        <div id="d1">
+          <img src="backimg.png" alt="back logo" />
+        </div>
+        <nav id="navbar">
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:5500/collage_mitra_.html">HOME</a>
+            </li>
+            <li>
+              <a href="https://collegemitra.xyz/rank_predictor/"
+                >RANK PREDICTOR</a
+              >
+            </li>
+            <li><a href="links">SERVICES</a></li>
+            <li>
+              <a href="https://collegemitra.xyz/premium/">PREMIUM PORTAL</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="rajanbody">
+      <main>
+        <div class="rajan1">
+          <h1><b>WELCOME TO COLLEGE MITRA</b></h1>
+        </div>
+        <div class="rajan2">
+          <h3>
+            A very well-known JEE Mains Counselling service which has already
+            done
+            
+            hundreds of counseling and has the data of more than thousands of
+            
+            students will surely help us to serve you in a better way.
+          </h3>
+        </div>
+        <div class="rajan3">
+          <div class="rajan4">
+            <img src="collage.png" alt="logo" />
+            <span>WE USE CALCULATIVE DATA</span>
+          </div>
+
+          <div class="rajan5">
+            <img src="SAVE-2.png" alt="" />
+            <div>WE HIRE ONLY THE BEST</div>
+          </div>
+          <div class="rajan6">
+            <img src="SAVE-3.png" alt="" />PROPRIETARY ADMISSION STRATEGY
+          </div>
+        </div>
+        <div class="rajan7">
+          <div class="rajan8">
+            With hundreds of data points from real students and admissions
+            
+            results, we study what works and doesn’t, then apply it to your
+            
+            application to make it unique. You benefit from the experience of
+            tons of students before you.
+            <br>
+            <br>
+            <br>
+             Think of it like Moneyball for college
+            admissions.
+          </div>
+          <div class="rajan9">
+            We are unapologetically selective with our hiring standards. We hire
+            
+            only 1 out of 100 applicants, and we weed out anyone who doesn’t
+            meet
+            
+            our unbelievably high standards.
+            <br>
+            <br>
+            <br>
+             When you meet your CollegeMitra
+            
+            consultant, you’ll trust this person has been vetted and tested
+            
+            thoroughly. Unlike other services, you won’t get some random college
+            student.
+          </div>
+          <div class="rajan10">
+            The way we approach admissions comes from years of collective
+            
+            experience getting students into colleges. We codified this into
+            more
+            
+            than 50 Principles that we apply to every student’s counseling
+            process
+            
+            and indeed we and our students succeed.
+            <br>
+            <br>
+            <br>
+             Moreover, we refine our
+            
+            strategy every year based on how admissions are changing.
+          </div>
+        </div>
+        <div class="rajan11"><button>OUR BEST SERVICES</button></div>
+        <div class="rajan12">
+          If you’ve given jee mains and have a low score in jee mains and
+          looking for a government college for a very low percentile or rank
+          here the collegemitra is going to help you to get a good government
+          engineering college with the best branches. . Yes, we’ll do all the
+          counseling based on jee mains like HSTES, JOSAA, REAP, MP DTE, UPSEE,
+          UKSEE, OJEE, BCECE, JCECE, GGSIPU, JAC D, JAC CHD, CGPET, and all
+          others.
+        </div>
+        <div class="rajan22">
+        <div class="rajan13"><h2>Our Previous Students</h2></div>
+        <div class="rajan14">
+          Obviously, we don’t speak the only thing that speaks is our counseling
+          session strategy and the guidance that we provide to students of
+          IIT-JEE 
+          <br>
+          in their counseling process.
+          <hr>
+        </div>
+        <div class="rajan15">
+          <div class="rajan16">
+            <span id="name1">KARAN KUMAR</span>
+            <hr>
+            <div>
+              Rank-238350 Currently doing Btech. from SLIET Punjab in the
+              chemical branch.
+            </div>
+            <img src="karan.jpg" alt="" />
+            <div class="ins1"><a href="na">INSTAGRAM</a></div>
+          </div>
+          <div class="rajan17">
+            <span id="name1">GAUTAM KUMAR</span>
+            <hr>
+            <div>
+              Rank-143691 Currently doing Btech. from GJU Hisar in Cse(Ai&Ml)
+              branch.
+            </div>
+            <img src="gautam.jpg" alt="" />
+            <div class="ins2">
+              <a href="https://www.instagram.com/gautam.kumar04/">INSTAGRAM</a>
+            </div>
+          </div>
+          <div class="rajan18">
+            <span id="name1">BIBHUTI JHA</span>
+            <hr>
+            <div>
+              Rank-475431 Currently doing Btech. from GJU Hisar in civil branch.
+            </div>
+            <img src="bibhuti.jpg" alt="" />
+            <div class="ins3">
+              <a href="https://www.instagram.com/bibhuti_bharadwaj/"
+                >INSTAGRAM</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </main>
+      <footer>
+        <div class="rajan23">
+        <div class="rajan19">GET IN TOUCH</div>
+        <div class="rajan20">
+          <h1><b>Join YouTube For Updates</b></h1>
+        </div>
+        <div class="rajan21">
+          <button>
+            <a href="https://www.youtube.com/channel/UCtv2Z_wANO2YRLIz8hTbM6g">
+              <h3>click here</h3></a
+            >
+          </button>
+        </div>
+        
+      </div>
+      <div class="last">Copyright © 2022---</div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

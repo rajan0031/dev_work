@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 380px;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 20px;
+  height: 250px;
+}

@@ -1,0 +1,242 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero input[type="text"],
+.hero input[type="date"],
+.hero button[type="submit"] {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.hero input[type="text"],
+.hero input[type="date"] {
+  width: 20rem;
+}
+
+.hero button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Services section styles */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: #f7f7f7;
+}
+
+.services h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.service-box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+  margin-bottom: 1;
+}
+
+/* Destinations section styles */
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: #fff;
+}
+
+.destinations h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.destination-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-box img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.destination-box h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.destination-box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.destination-box button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.destination-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}

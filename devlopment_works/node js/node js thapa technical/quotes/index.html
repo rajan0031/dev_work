@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="font-size: 20px">****THE CSS OF THIS WEB APP IS NOT GOOD****</h1>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <hr />
+
+    <div class="cont">
+      <div id="quotes"></div>
+    </div>
+    <div class="cont2">
+      <div style="background-color: blueviolet">written by--</div>
+      <div id="author"></div>
+    </div>
+
+    <div class="btn">
+      <button id="newQ">new quotes</button>
+    </div>
+    <div></div>
+    <script>
+      const quotes = document.getElementById("quotes");
+      const author = document.getElementById("author");
+      const newQ = document.getElementById("newQ");
+     
+     
+      let realData = "";
+      let quotesData = "";
+      let authorData = "";
+
+
+
+      const getNewQuotes = () => {
+        let rnum = Math.floor(Math.random() * 20);
+        quotesData = realData[rnum];
+
+        quotes.innerText = `${quotesData.text}`;
+        if (quotesData.author == null) {
+          author.innerText = "unknown";
+        } else {
+          author.innerText = `${quotesData.author}`;
+        }
+      };
+
+
+
+      const getQuotes = async () => {
+        const api = "https://type.fit/api/quotes";
+        try {
+          let data = await fetch(api);
+          realData = await data.json();
+          getNewQuotes();
+          // console.log(realData[0]);
+        } catch (error) {}
+      };
+
+      
+      newQ.addEventListener("click", getNewQuotes);
+      getQuotes();
+    </script>
+  </body>
+</html>

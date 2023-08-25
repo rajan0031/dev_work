@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scroll events in java script</title>
+    <style>
+      #text {
+        padding: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">
+      <h1>scroll event in java script</h1>
+      <br />
+      <br />
+      <hr />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quas
+        vitae accusamus hic reiciendis. Maiores fugiat unde laudantium quod id
+        laboriosam autem deleniti exercitationem sequi voluptate labore tempora
+        temporibus omnis quas, suscipit ex tempore aspernatur ab eaque aperiam
+        error dolorem corporis! Cumque iure dignissimos ex, repellat velit
+        recusandae sequi culpa laboriosam odit corporis iste ducimus neque
+        nostrum natus voluptates necessitatibus, quaerat pariatur. Corporis
+        ipsam eaque deleniti, fugiat dolorem, cumque deserunt ipsa illo
+        voluptatem excepturi delectus minima quo blanditiis dolore. Totam quos
+        in laboriosam ducimus aliquid, doloremque architecto iste cupiditate
+        fuga quae voluptate et labore iusto quas veritatis sequi exercitationem
+        minus sit quibusdam, numquam obcaecati dolorum maiores delectus? Labore
+        officiis natus deserunt vel consequuntur molestiae facilis ipsum
+        possimus consectetur! Nulla vitae, quo tenetur voluptates quis sunt
+        distinctio libero amet officia, reiciendis quia minima pariatur ea
+        molestias veritatis reprehenderit blanditiis quasi excepturi qui.
+        Architecto earum cupiditate odit sapiente at reprehenderit impedit vero?
+      </p>
+      <br />
+      <br />
+      <hr />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quas
+        vitae accusamus hic reiciendis. Maiores fugiat unde laudantium quod id
+        laboriosam autem deleniti exercitationem sequi voluptate labore tempora
+        temporibus omnis quas, suscipit ex tempore aspernatur ab eaque aperiam
+        error dolorem corporis! Cumque iure dignissimos ex, repellat velit
+        recusandae sequi culpa laboriosam odit corporis iste ducimus neque
+        nostrum natus voluptates necessitatibus, quaerat pariatur. Corporis
+        ipsam eaque deleniti, fugiat dolorem, cumque deserunt ipsa illo
+        voluptatem excepturi delectus minima quo blanditiis dolore. Totam quos
+        in laboriosam ducimus aliquid, doloremque architecto iste cupiditate
+        fuga quae voluptate et labore iusto quas veritatis sequi exercitationem
+        minus sit quibusdam, numquam obcaecati dolorum maiores delectus? Labore
+        officiis natus deserunt vel consequuntur molestiae facilis ipsum
+        possimus consectetur! Nulla vitae, quo tenetur voluptates quis sunt
+        distinctio libero amet officia, reiciendis quia minima pariatur ea
+        molestias veritatis reprehenderit blanditiis quasi excepturi qui.
+        Architecto earum cupiditate odit sapiente at reprehenderit impedit vero?
+      </p>
+      <br />
+      <br />
+      <hr />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quas
+        vitae accusamus hic reiciendis. Maiores fugiat unde laudantium quod id
+        laboriosam autem deleniti exercitationem sequi voluptate labore tempora
+        temporibus omnis quas, suscipit ex tempore aspernatur ab eaque aperiam
+        error dolorem corporis! Cumque iure dignissimos ex, repellat velit
+        recusandae sequi culpa laboriosam odit corporis iste ducimus neque
+        nostrum natus voluptates necessitatibus, quaerat pariatur. Corporis
+        ipsam eaque deleniti, fugiat dolorem, cumque deserunt ipsa illo
+        voluptatem excepturi delectus minima quo blanditiis dolore. Totam quos
+        in laboriosam ducimus aliquid, doloremque architecto iste cupiditate
+        fuga quae voluptate et labore iusto quas veritatis sequi exercitationem
+        minus sit quibusdam, numquam obcaecati dolorum maiores delectus? Labore
+        officiis natus deserunt vel consequuntur molestiae facilis ipsum
+        possimus consectetur! Nulla vitae, quo tenetur voluptates quis sunt
+        distinctio libero amet officia, reiciendis quia minima pariatur ea
+        molestias veritatis reprehenderit blanditiis quasi excepturi qui.
+        Architecto earum cupiditate odit sapiente at reprehenderit impedit vero?
+      </p>
+      <br />
+      <br />
+      <hr />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit quas
+        vitae accusamus hic reiciendis. Maiores fugiat unde laudantium quod id
+        laboriosam autem deleniti exercitationem sequi voluptate labore tempora
+        temporibus omnis quas, suscipit ex tempore aspernatur ab eaque aperiam
+        error dolorem corporis! Cumque iure dignissimos ex, repellat velit
+        recusandae sequi culpa laboriosam odit corporis iste ducimus neque
+        nostrum natus voluptates necessitatibus, quaerat pariatur. Corporis
+        ipsam eaque deleniti, fugiat dolorem, cumque deserunt ipsa illo
+        voluptatem excepturi delectus minima quo blanditiis dolore. Totam quos
+        in laboriosam ducimus aliquid, doloremque architecto iste cupiditate
+        fuga quae voluptate et labore iusto quas veritatis sequi exercitationem
+        minus sit quibusdam, numquam obcaecati dolorum maiores delectus? Labore
+        officiis natus deserunt vel consequuntur molestiae facilis ipsum
+        possimus consectetur! Nulla vitae, quo tenetur voluptates quis sunt
+        distinctio libero amet officia, reiciendis quia minima pariatur ea
+        molestias veritatis reprehenderit blanditiis quasi excepturi qui.
+        Architecto earum cupiditate odit sapiente at reprehenderit impedit vero?
+      </p>
+    </div>
+    <script>
+      window.addEventListener("wheel", function (event) {
+        if (event.deltaY < 0) {
+          console.log("scrolling UP......");
+        } else if (event.deltaY > 0) {
+          console.log("scrolling Down.....");
+        }
+      });
+    </script>
+  </body>
+</html>

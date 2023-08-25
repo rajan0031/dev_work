@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keyboards events</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #form {
+        border: 2px solid black;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h1 id="h1">keyboard events</h1>
+      <p>onkeydown</p>
+      <input type="text" onkeydown="key1()" />
+      <p>onkeyup</p>
+      <input type="text" onkeyup="key2()" />
+      <p>onkeypress</p>
+      <input type="text" id="press" onkeypress="document.getElementById('form').style.background=this.value" />
+    </div>
+    <script>
+      function key1() {
+       // location.assign("http://127.0.0.1:5500/keyboard_events/onkeydown.html");
+       
+      }
+      function key2() {
+       // loaction.assign("http://127.0.0.1:5500/keyboard_events/onkeyup.html");
+      }
+     
+    </script>
+  </body>
+</html>

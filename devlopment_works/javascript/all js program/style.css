@@ -1,0 +1,7 @@
+.cl1{
+    background: local;
+    border: 2px solid black;
+    width: 33%;
+    justify-content: center;
+    display: flex;
+}

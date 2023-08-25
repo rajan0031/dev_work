@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz app</title>
+    <style>
+      .cnt1 {
+        text-align: left;
+      }
+      .cnt2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+      .btn {
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+        background-color: aqua;
+      }
+      .cnt2 button:hover {
+        text-transform: uppercase;
+        text-emphasis-color: white;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>## welcome to all india general knowledge test ##</h1>
+    <div class="cnt1">
+      question 1: who is prime minister of india ? ans 1:
+      <input type="text" id="ans1" />
+      <hr />
+      question 2: Baku is the capital of which country? ans 2:
+      <input type="text" name="" id="ans2" />
+      <hr />
+      question 3: Name the currency used in Japan? ans 3:
+      <input type="text" id="ans3" />
+      <hr />
+      question 4: Which lake is situated in the border of countries, Peru and
+      Bolivia? ans 4:
+      <input type="text" id="ans4" />
+      <hr />
+      question 5: The distance travelled by light in one year is called _______
+      ans 5:
+      <input type="text" name="" id="ans5" />
+      <hr />
+      <h6>note: 1-give all your ans in lowercase letter</h6>
+    </div>
+    <div class="cnt2">
+      <button class="btn" onclick="submitans()">submit</button>
+    </div>
+
+    <script>
+      function submitans() {
+        var cnt = 0;
+        var ans1 = document.getElementById("ans1").value;
+        var ans2 = document.getElementById("ans2").value;
+        var ans3 = document.getElementById("ans3").value;
+        var ans4 = document.getElementById("ans4").value;
+        var ans5 = document.getElementById("ans5").value;
+        if (ans1 == "narendrea") {
+          cnt++;
+        }
+
+        if (ans2 == "azerbaijan") {
+          cnt++;
+        }
+        if (ans3 == "yen") {
+          cnt++;
+        }
+        if (ans4 == "titicaca") {
+          cnt++;
+        }
+        if (ans5 == "lightyear") {
+          cnt++;
+        }
+        alert("your final test score is :"+cnt);
+      }
+    </script>
+  </body>
+</html>

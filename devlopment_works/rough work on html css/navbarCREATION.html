@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <style>
+        .navbar {
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 40px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            margin: 3px;
+            list-style: none;
+            margin-left: 15px;
+            margin-top: 20px;
+            padding: 0px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .navbar img {
+            width: 70px;
+            height: 70px;
+            border-radius: 40px;
+        }
+
+        #image {
+
+            padding-right: 20px;
+        }
+
+        .navbar li a :hover {
+            background-color: aquamarine;
+            text-decoration-color: blue;
+        }
+
+        .main {
+            border: 2px solid pink;
+            float: left;
+            display: flex;
+            margin-top: 100px;
+            padding: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+
+        }
+
+        .d2 {
+            border: 2px solid red;
+            width: 500px;
+            height: 300px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .d3 {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+        }
+
+        .d4 {
+            border: 2px solid yellow;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <ul>
+                <li id="image"><img src="download.png" alt=""></li>
+                <li><a href="link">HOME</a></li>
+                <li><a href="link">SERVICES</a></li>
+                <li><a href="link">REGISTER</a></li>
+                <li><a href="link">CONTACT US</a></li>
+                <li><a href="link">ABOUT US</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main">
+
+        <div class="d2">
+            i am left
+        </div>
+        <div class="d3">
+            i am left
+        </div>
+        <div class="d4">
+            i am left
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

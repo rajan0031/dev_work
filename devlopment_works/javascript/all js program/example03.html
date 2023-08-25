@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event listener</title>
+  </head>
+  <body>
+    <div id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam
+      hic minima similique. Veniam et voluptates natus ipsam cum tenetur nemo
+      itaque adipisci architecto, reprehenderit quibusdam. Ipsam similique
+      ducimus dignissimos, aut est soluta explicabo facere ullam vero modi
+      nobis, placeat quo sit accusantium. In eligendi distinctio quas vitae ex
+      inventore porro cupiditate reprehenderit accusamus! Amet quod tempore
+      possimus ad repellat, incidunt earum. Amet dolorem nostrum consequuntur
+      animi cupiditate? Placeat harum nesciunt in corrupti optio, earum nam
+      obcaecati asperiores! Laborum quisquam doloribus magnam. A expedita
+      voluptatem excepturi earum error, accusantium corrupti voluptate eius at
+      porro consectetur! Accusamus ut rem ratione debitis. Nulla distinctio id
+      vitae magni nesciunt eius, laudantium illo quos, voluptates ipsa quaerat
+      delectus quidem labore libero corrupti cumque placeat dolorum in rem?
+    </div>
+    <script>
+      let para = document.getElementById("para");
+      para.addEventListener("mouseover", function run() {
+        alert("mouse is going on para");
+      });
+      // let para = document.getElementById("para");
+      para.addEventListener("mousein", function run() {
+        alert("mouse is outside on para");
+      });
+    </script>
+  </body>
+</html>

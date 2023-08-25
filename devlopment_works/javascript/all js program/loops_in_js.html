@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="con">this is loop in js</div>
+    <script>
+      /*
+      let i = 0;
+      for (i = 0; i < 10; i++) {
+        console.log(i);
+      }
+      let friends=new Array("rajan" ,"vishal","moti ji","aditya ji");
+      for(let i=0 ; i<friends.length ; i++){
+        console.log("hello "+   friends[i]);
+      }
+
+      let arr = new Array("rajan", "vishal", "vivek", "pushpha ji");
+      arr.forEach(function f(ele) {
+        console.log("hello ji " + ele);
+      });
+      
+
+      let friends = new Array("rajan", "vishal", "moti ji", "aditya ji");
+      for (ele of friends) {
+        console.log("hello " + ele + "," + "welcome to new way of learnings");
+      }
+
+      */
+      let emp = {
+        name: "Rajan babu",
+        class: "lkg",
+        salert: "36lpa",
+      };
+      for (key in emp) {
+        console.log(`the ${key} of employee is ${emp[key]}`);
+      }
+    </script>
+  </body>
+</html>

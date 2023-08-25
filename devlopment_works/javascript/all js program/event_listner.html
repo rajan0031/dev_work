@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event listener tut57</title>
+  </head>
+  <style>
+    #btn {
+      padding: 13px;
+      border-radius: 222px;
+      background-color: aqua;
+      border: 3px solid red;
+      color: red;
+      font-size: xx-large;
+      font-style: bold;
+      cursor: pointer;
+    }
+    #btn :hover {
+      background: solid blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>this is my headings</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus
+        architecto officia iusto assumenda ea nesciunt rerum maiores? Voluptate
+        enim mollitia nostrum aliquam neque aut delectus nulla hic distinctio
+        doloribus officiis inventore blanditiis sunt saepe quam, unde a ipsum
+        repellat aliquid, ab error iusto deserunt sint. Repellendus tempore esse
+        inventore, ad laudantium quam quidem porro sit nihil cum magni placeat
+        explicabo odit! Veritatis dignissimos nihil, ullam quod reprehenderit
+        libero. Pariatur ipsam expedita a laborum asperiores deserunt architecto
+        adipisci dignissimos dolorem? Voluptate libero repudiandae facere in
+        odio natus nihil reiciendis culpa beatae optio aliquam totam debitis
+        magni eligendi adipisci omnis illo, voluptatem sapiente dignissimos
+        mollitia doloribus sint. Asperiores facilis iure facere. Ex nisi nemo
+        alias facere voluptatum, voluptatem veniam vero magnam quasi labore,
+        quia tenetur veritatis distinctio numquam, inventore natus recusandae
+        iusto sed assumenda repellat eveniet impedit ut libero aliquam! Omnis
+        voluptatem similique neque. Facilis delectus praesentium saepe. Sed, eum
+        cum? Aliquid reprehenderit cum fugit at ducimus et esse asperiores ad
+        eaque explicabo, suscipit, error minima veniam itaque quae in
+        perspiciatis repellat atque repudiandae possimus eveniet maiores quidem
+        doloremque architecto. Eaque molestiae esse in veritatis perspiciatis
+        consequatur temporibus velit nostrum dolor? Explicabo, repellendus
+        doloribus odio architecto dolorum numquam sed sint distinctio eveniet
+        magnam, unde aut exercitationem omnis eos tempore ad quidem maxime quae
+        praesentium illum esse placeat? Neque dignissimos sint aliquam iure
+        deleniti asperiores magnam, libero laudantium consequuntur quia eos
+        voluptatum itaque obcaecati.
+      </p>
+    </div>
+    <button id="btn" onclick="togglehide()">show/hide</button>
+    <script>
+     
+      function togglehide() {
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

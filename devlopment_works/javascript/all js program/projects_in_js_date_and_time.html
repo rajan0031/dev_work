@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date and time</title>
+  </head>
+  <style>
+    .conatiner {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background: lightcoral;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      border: 2px solid red;
+      border-radius: 12px;
+    }
+    #time {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      background: lightblue;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 26px;
+      border: 5px solid blue;
+      border-radius: 30px;
+      margin-top: 50px;
+    }
+  </style>
+  <body>
+    <div class="conatiner">
+      this is a java script program to show dte and time
+    </div>
+    <span id="time"> the date of today is </span>
+    <script>
+      function time() {
+        let time = new Date();
+        console.log("this is date and time");
+        document.getElementById("time").innerHTML = time;
+        console.log(time);
+      }
+
+      setInterval(time, 1000);
+    </script>
+  </body>
+</html>

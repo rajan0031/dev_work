@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string functions</title>
+  </head>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni ut
+      odit, facere quidem aut beatae cupiditate aliquid obcaecati. A ratione ut
+      nisi!
+    </h1>
+    <script>
+      var str =
+        "this is a string and it is also a good string which can be used to make a new word";
+      console.log(str);
+      var position = str.indexOf("is");
+      var pos1 = str.indexOf("i");
+      var pos2 = str.lastIndexOf("is");
+      console.log(`index of "i"s is ${position}`);
+      console.log(`index if i is ${pos1}`);
+      console.log(`the last index of is is ${pos2}`);
+      var substr = str.slice(0, 234);
+      var replace = str.replace("this", "rajan");
+      console.log(str);
+      console.log(str.toUpperCase());
+      console.log(replace);
+      console.log(replace.toUpperCase());
+      console.log(replace.toLowerCase());
+      var newstr = str.concat(" ruk jana nahi hai");
+      console.log(newstr);
+      var s = "                                  rajan kushwaha      ";
+      console.log(s);
+      console.log(s.trim());
+      var val = str.charAt(11);
+      console.log(val);
+    </script>
+  </body>
+</html>

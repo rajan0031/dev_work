@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      .cnt1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+      }
+
+      .cnt2 {
+        height: 300px;
+        width: 500px;
+        border: 2px solid black;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cnt1">welcome to login page</div>
+    <hr />
+    <br />
+    <br />
+    <div class="cnt2">
+      username:<br />
+      <input type="text" name="text" id="username" />
+      <br />
+      <br />
+      passward:<br />
+      <input type="text" name="text" id="passward" />
+      <br />
+      <br />
+      <button onclick="login()">submit</button>
+    </div>
+    <script>
+      function login() {
+        var uname = document.getElementById("username").value;
+        var pass = document.getElementById("passward").value;
+        if (uname == "rajan" && pass == "123") {
+          location.assign(
+            "http://127.0.0.1:5500/login%20form%20js01/page.html"
+          );
+        } else {
+          alert("user name and passward is wrong");
+        }
+      }
+    </script>
+  </body>
+</html>

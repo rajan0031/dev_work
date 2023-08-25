@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  background-color: red;
+  display: flex;
+  text-align: end;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 100px;
+  padding: 100px;
+  
+}
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+}

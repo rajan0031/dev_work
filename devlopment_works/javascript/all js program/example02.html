@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change colour of texts</title>
+  </head>
+  <style>
+    #btn1 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: red;
+    }
+    #btn2 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: green;
+    }
+    #btn3 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: pink;
+    }
+    #btn4 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: yellow;
+    }
+    #btn5 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: purple;
+    }
+    #btn6 {
+      padding: 14px;
+      margin: 23px;
+      width: 170px;
+      border-radius: 30px;
+      background-color: mediumspringgreen;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <div>
+        <h1>this is headings 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis
+          accusantium accusamus eum numquam eaque quas provident beatae
+          pariatur, magnam officiis molestiae laborum vero enim quis soluta ipsa
+          esse. Odio velit impedit voluptates. Amet totam pariatur maxime minima
+          magnam sunt eveniet hic vero sint. Delectus omnis laboriosam quia
+          cupiditate placeat ipsa perferendis error debitis ad, vel dignissimos!
+          Amet cum officia iure excepturi numquam minima perferendis quia
+          quibusdam officiis, voluptatibus expedita ullam dolore maxime
+          inventore sunt consequatur quaerat voluptatum nam tempore odio? Culpa
+          dicta molestias fugiat facere iusto odio officiis nulla obcaecati
+          omnis! Aliquam dolorum beatae reprehenderit molestias, accusamus est
+          ipsam soluta sapiente velit consectetur, quos dolores maiores,
+          recusandae laborum. Iure culpa, est reprehenderit quod velit esse
+          officia facilis saepe? Iste similique tempora nisi.
+        </p>
+      </div>
+      <div>
+        <h1>this is headings 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis
+          accusantium accusamus eum numquam eaque quas provident beatae
+          pariatur, magnam officiis molestiae laborum vero enim quis soluta ipsa
+          esse. Odio velit impedit voluptates. Amet totam pariatur maxime minima
+          magnam sunt eveniet hic vero sint. Delectus omnis laboriosam quia
+          cupiditate placeat ipsa perferendis error debitis ad, vel dignissimos!
+          Amet cum officia iure excepturi numquam minima perferendis quia
+          quibusdam officiis, voluptatibus expedita ullam dolore maxime
+          inventore sunt consequatur quaerat voluptatum nam tempore odio? Culpa
+          dicta molestias fugiat facere iusto odio officiis nulla obcaecati
+          omnis! Aliquam dolorum beatae reprehenderit molestias, accusamus est
+          ipsam soluta sapiente velit consectetur, quos dolores maiores,
+          recusandae laborum. Iure culpa, est reprehenderit quod velit esse
+          officia facilis saepe? Iste similique tempora nisi.
+        </p>
+      </div>
+      <div>
+        <h1>this is headings 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo omnis
+          accusantium accusamus eum numquam eaque quas provident beatae
+          pariatur, magnam officiis molestiae laborum vero enim quis soluta ipsa
+          esse. Odio velit impedit voluptates. Amet totam pariatur maxime minima
+          magnam sunt eveniet hic vero sint. Delectus omnis laboriosam quia
+          cupiditate placeat ipsa perferendis error debitis ad, vel dignissimos!
+          Amet cum officia iure excepturi numquam minima perferendis quia
+          quibusdam officiis, voluptatibus expedita ullam dolore maxime
+          inventore sunt consequatur quaerat voluptatum nam tempore odio? Culpa
+          dicta molestias fugiat facere iusto odio officiis nulla obcaecati
+          omnis! Aliquam dolorum beatae reprehenderit molestias, accusamus est
+          ipsam soluta sapiente velit consectetur, quos dolores maiores,
+          recusandae laborum. Iure culpa, est reprehenderit quod velit esse
+          officia facilis saepe? Iste similique tempora nisi.
+        </p>
+      </div>
+    </div>
+
+    <button id="btn1" onclick="cng1()">H01</button>
+    <button id="btn2" onclick="cng2()">H02</button>
+    <button id="btn3" onclick="cng3()">H03</button>
+    <button id="btn4" onclick="cng4()">H04</button>
+    <button id="btn5" onclick="cng5()">H05</button>
+    <button id="btn6" onclick="cng6()">H06</button>
+
+    <script>
+        
+      function cng1() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "red") {
+          main.style.color = "red";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+      function cng2() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "green") {
+          main.style.color = "green";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+      function cng3() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "pink") {
+          main.style.color = "pink";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+      function cng4() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "yellow") {
+          main.style.color = "yellow";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+      function cng5() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "purple") {
+          main.style.color = "purple";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+      function cng6() {
+        let btn1 = document.getElementById("btn1");
+        let main = document.getElementById("main");
+        if (main.style.color != "lightgreen") {
+          main.style.color = "lightgreen";
+          //para1.style.background = "skyblue";
+        } else {
+          main.style.color = "black";
+        }
+      }
+    </script>
+  </body>
+</html>

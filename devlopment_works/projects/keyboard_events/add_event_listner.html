@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add event listner</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #wrapper {
+        margin: 25px auto 0px auto;
+        width: 75%;
+      }
+      #wrapper h1 {
+        display: block;
+        background-color: #203d3a;
+        color: #fff;
+        text-align: center;
+        line-height: 75px;
+        border-radius: 20px 20px 0px 0px;
+      }
+      #wrapper img {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        cursor: pointer;
+        filter: grayscale(100%);
+      }
+      #block1,
+      #block2 {
+        width: 100%;
+        float: left;
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="block1">
+        <h1>enjoy nature</h1>
+        <img src="img1.jpg" alt="" id="img1" />
+      </div>
+      <div id="block2">
+        <h1>love nature</h1>
+        <img src="img2.jpg" alt="" id="img2" />
+      </div>
+    </div>
+    <script>
+      document.getElementById("img1").onmouseover = abc;
+      function abc() {
+        document.getElementById("img1").style.filter = "grayscale(0%)";
+      }
+      document.getElementById("img1").onmouseout = efg;
+
+      function efg() {
+        document.getElementById("img1").style.filter = "grayscale(100%)";
+      }
+
+      //
+      document.getElementById("img2").onmouseover = hij;
+      function hij() {
+        document.getElementById("img2").style.filter = "grayscale(0%)";
+      }
+      document.getElementById("img2").onmouseout = klm;
+
+      function klm() {
+        document.getElementById("img2").style.filter = "grayscale(100%)";
+      }
+    </script>
+  </body>
+</html>

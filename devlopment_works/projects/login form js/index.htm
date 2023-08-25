@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>validate login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">user Login</h1>
+      <form
+        class="login_form"
+        method="post"
+        name="form"
+        onsubmit="return validated()"
+      >
+        <div class="font">email or phone</div>
+        <input type="text" name="email" >
+        <div id="email_error">please enter your email or phone</div>
+        <div class="font font2">password</div>
+
+        <input type="password" name="passward" >
+        <div id="pass_error">please enter your password</div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="valid.js"></script>
+  </body>
+</html>

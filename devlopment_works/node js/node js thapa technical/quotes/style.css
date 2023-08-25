@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  margin: 100px;
+}
+.cont {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.cont2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#quotes {
+  margin-top: 380px;
+  border: 2px solid blue;
+  height: 250px;
+  width: 300px;
+  margin-top: 140px;
+  padding: 100px;
+  text-decoration: wavy;
+  font-size: 40px;
+  padding-bottom: 100px;
+  background-color: aqua;
+  text-align-last: auto;
+  color: blueviolet;
+  border-top-right-radius: 100px;
+  border-bottom-style: groove;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#newQ {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#author {
+ 
+  background-color: blueviolet;
+}

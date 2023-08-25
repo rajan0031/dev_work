@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom maniplutations</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cl1">class 1</div>
+      <div class="cl1">class 2</div>
+      <div class="cl1">class 3</div>
+      <div class="cl1">class 4</div>
+    </div>
+    <h1 id="h1">heading 1</h1>
+    <h1 id="h2">heading 2</h1>
+    <h1 id="h3">heading 3</h1>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+    <script>
+      /*
+      var var1 = document.getElementsByClassName("cl1");
+      console.log(var1[0]);
+      var1[0].style.border = "2px solid red";
+      var1[1].textContent = "claas 1 students";
+      var1[0].style.color = "red";
+
+      for (var i = 0; i < var1.length; i++) {
+        var1[i].style.border = "2px solid yellow";
+      }
+      */
+      var var1 = document.getElementsByTagName("li");
+      console.log(var1);
+      for (var i = 0; i < var1.length; i++) {
+        var1[i].style.background = "lightblue";
+        var1[i].style.border = "2px solid red";
+      }
+    </script>
+  </body>
+</html>

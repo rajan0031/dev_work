@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0;
+      padding: 0; display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; background-color: #f2f2f2; } .register-container {
+      background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0
+      10px rgba(0, 0, 0, 0.2); } .register-container h2 { text-align: center;
+      margin-bottom: 20px; } .register { display: flex; flex-direction: column;
+      } .register-form label { margin-bottom: 5px; } .register-form input {
+      padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius:
+      5px; outline: none; } .register-form button { padding: 10px 15px;
+      background-color: #333; color: #fff; border: none; border-radius: 5px;
+      cursor: pointer; } .register-form button:hover { background-color: #444; }
+    </style>
+  </head>
+  <body>
+    <div class="register-container">
+      <h2>Register</h2>
+      <form class="register" action="/signup" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="conform-password"
+          required
+        />
+
+        <button type="submit" class="btnRegister" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>

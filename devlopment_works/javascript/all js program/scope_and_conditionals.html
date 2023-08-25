@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scope and conditionals</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+        <li>Item-6</li>
+        <li>Item-7</li>
+      </ul>
+    </div>
+    <script>
+      var string1 = "this is a string ";
+      console.log(string1);
+      let a = "rajan";
+      {
+        let a = "rajan ji";
+        console.log(a);
+      }
+      console.log(a);
+      const ax = "this cant be changed";
+      ax = "rajan";
+      console.log(ax);
+      var age = 19;
+
+      if (age > 10) {
+        consol.log(age);
+      }
+      const val = 1;
+      switch (val) {
+        case 1:
+          console.log("i am rajan ji");
+          break;
+        default:
+          console.log("rajan");
+          break;
+      }
+    </script>
+  </body>
+</html>

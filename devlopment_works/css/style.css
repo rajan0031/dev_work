@@ -1,0 +1,22 @@
+
+
+#second{
+    background-position-x: 123px;
+    background-color:red;
+    color: blue;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+#first{
+    background-color: aqua;
+    border:20px solid black;
+}
+/* 
+body{
+    background-color: aquamarine;
+} */
+body{
+    border-top: 110px;
+}
